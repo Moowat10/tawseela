@@ -1,0 +1,74 @@
+.img-slider {
+  height: 48.75rem;
+  background-size: 100% 100%;
+  animation: slider 23s linear infinite;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  width: 100%;
+}
+.img-slider .banner {
+  display: flex;
+  height: 15%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.img-slider .banner .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.img-slider .banner pre {
+  padding: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.img-slider .banner .bullets {
+  width: 10%;
+  min-width: 5.6rem;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5%;
+}
+.img-slider .banner .bullets .circle {
+  min-width: 0.7rem;
+  min-height: 0.7rem;
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+
+/*@keyframes slider {
+  0% {
+    background-image: url("../img/bath1.jpg");
+  }
+  33.33% {
+    background-image: url("../img/bath2.jpg");
+  }
+  66.66% {
+    background-image: url("../img/bath3.jpg");
+  }
+  100% {
+    background-image: url("../img/bath1.jpg");
+  }
+}*/
+@media screen and (max-width: 900px) {
+  .img-slider {
+    margin-top: 5%;
+  }
+  .img-slider .banner {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-direction: column-reverse;
+  }
+  .img-slider .banner .text {
+    background-color: #252d31;
+  }
+}

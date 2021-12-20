@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap');
+.header-wrapper {
+  overflow-x: hidden;
+  color: rgb(163,0,7);
+  font-family: 'Poiret One', cursive;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  
+}
+.header-wrapper .side {
+  height: 100%;
+  margin: 1%;
+
+}
+.header-wrapper .side h1 {
+  cursor: pointer;
+  font-size: 2.5rem;
+
+}
+.header-wrapper h4{
+ cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-wrapper {
+     right: 2.1vw;
+     bottom: 1vh;
+  }
+
+.header-wrapper .side h4{
+  position: relative;
+  right: 20%;
+ top: 5%;
+ font-size: 1rem;
+} 
+.header-wrapper .side h1{
+ font-size: 1.5rem;
+ margin-left: 5%;
+} 
+}

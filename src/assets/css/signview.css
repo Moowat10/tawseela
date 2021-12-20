@@ -1,0 +1,66 @@
+.signform-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signform{
+    height: 50%;
+    width: 35%;
+    border-radius: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    
+} 
+.signform .title{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+.signform .title h1{
+    color: whitesmoke;
+
+}
+.signform .input{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    float: left;
+    color: white;
+    flex-direction: column;
+    
+    
+}
+.signform .input input{
+    width: 100%;
+    border-radius: 8px;
+
+}
+.signform .input label{
+    text-align: left;
+    width: 100%;
+}
+.signform .input button{
+    margin-top: 10%;
+    border: none;
+    background-color: transparent;
+}
+.signform .signwith{
+    width: 90%;
+    height: 15%;
+    margin-top: 10%;
+}
+.signform .signwith h7{
+
+    color: white;
+    text-align: left;
+    margin-left: 15%;
+}
