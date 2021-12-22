@@ -10,12 +10,6 @@ import SectionFour from "../views/SectionFour.js";
 export default class Homeview extends Component {
   state = {
     name: "",
-    nationalId: "",
-    password: " ",
-    confirmPassword: " ",
-    phoneNumber: " ",
-    address: " ",
-    email: " ",
     uiConfig: {
       signInFlow: "popup",
       signInSuccessUrl: "/",
@@ -29,19 +23,8 @@ export default class Homeview extends Component {
   render() {
     const handleText = (event) => {
       if (event.target.id === "name") {
+        console.log(this.state.name);
         this.setState({ name: event.target.value });
-      }else if((event.target.id === "NatID")){
-        this.setState({ nationalId: event.target.value });
-      }else if((event.target.id === "PhoneNum")){
-        this.setState({ phoneNumber: event.target.value });
-      }else if((event.target.id === "Address")){
-        this.setState({ address: event.target.value });
-      }else if((event.target.id === "Email")){
-        this.setState({ email: event.target.value });
-      }else if((event.target.id === "Pass")){
-        this.setState({ password: event.target.value });
-      }else if((event.target.id === "ConfPass")){
-        this.setState({ confirmPassword: event.target.value });
       }
     };
     return (
@@ -64,8 +47,8 @@ export default class Homeview extends Component {
                   <input
                     id="name"
                     onChange={handleText}
+                    value={this.static.name}
                     type="input"
-                    value={this.state.name}
                     className="form_field"
                   ></input>
                   <label for="name" className="form_label">
@@ -74,10 +57,8 @@ export default class Homeview extends Component {
                 </div>
                 <div className="inputBox">
                   <input
-                    id="NatID"
-                    onChange={handleText}
                     type="input"
-                    value={this.state.nationalId}
+                    value={this.static.nationalId}
                     className="form_field"
                   ></input>
                   <label for="name" className="form_label">
@@ -85,31 +66,31 @@ export default class Homeview extends Component {
                   </label>
                 </div>
                 <div className="inputBox">
-                  <input id="PhoneNum" onChange={handleText} type="input" value={this.state.phoneNumber} className="form_field"></input>
+                  <input type="input" className="form_field"></input>
                   <label for="name" className="form_label">
                     Phone Number
                   </label>
                 </div>
                 <div className="inputBox">
-                  <input id="Address" onChange={handleText} type="input" value={this.state.address} className="form_field"></input>
+                  <input type="input" className="form_field"></input>
                   <label for="name" className="form_label">
                     Address
                   </label>
                 </div>
                 <div className="inputBox">
-                  <input id="Email" onChange={handleText} type="input" value={this.state.email} className="form_field"></input>
+                  <input type="input" className="form_field"></input>
                   <label for="name" className="form_label">
                     Email
                   </label>
                 </div>
                 <div className="inputBox">
-                  <input id="Pass" onChange={handleText} type="input" value={this.state.password} className="form_field"></input>
+                  <input type="input" className="form_field"></input>
                   <label for="name" className="form_label">
                     Password
                   </label>
                 </div>
                 <div className="inputBox">
-                  <input id="ConfPass" onChange={handleText} type="input" value={this.state.confirmPassword} className="form_field"></input>
+                  <input type="input" className="form_field"></input>
                   <label for="name" className="form_label">
                     Confirm Password
                   </label>

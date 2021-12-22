@@ -14,7 +14,7 @@ import ProfileView from "./layouts/Profileview";
 ReactDOM.render(
   <AuthProvider className="app">
     <BrowserRouter>
-      <HomeView></HomeView>
+      <ProfileView></ProfileView>
       <Header />
     </BrowserRouter>
   </AuthProvider>,

@@ -1,42 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Fredoka+One&family=Monoton&family=Pacifico&family=Poiret+One&display=swap');
+
 .profile-wrapper{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 0.8rem;
+    
 }
 .profile-wrapper .container{
-    width: 70%;
-    height: 75%;
+    width: 60%;
+    height: 65%;
     background-color: azure;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow:  0 0 100px rgba(0,0,0,0.5);
+    border-radius: 30px;
 }
 .profile-wrapper .container .up{
     width: 100%;
-    height: 74.25%;
-    background-color: blueviolet;
+    height: 74.125%;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .profile-wrapper .container .up .left{
 height: 100%;
 width: 25%;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.profile-wrapper .container .up .left .image-frame{
+.profile-wrapper .container .up .left .top{
+ width: 100%;
+ height: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.profile-wrapper .container .up .left .top h1{
+    color: black;
+    margin-top: 1rem;
+}
+.profile-wrapper .container .up .left .bottom{
+    width: 100%;
+    height: 80%;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    
+}
+.profile-wrapper .container .up .left .bottom .image-frame{
     position: absolute;
     width: 18rem;
     height: 18rem;
-    background-color: aliceblue;
+    background-image: url("../img/profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 1000px;
-    margin-left: 1rem;
+    margin-left: 5rem;
+      box-shadow:  0 0 40px #b82d34;
 }
 .profile-wrapper .container .up .mid{
 height: 100%;
@@ -49,7 +82,25 @@ align-items: center;
 .profile-wrapper .container .up .mid .info{
     width: 100%;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .inputBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .inputBox h2{
+    font-size: 1.4rem;
+}
+.info .inputBox label{
+    font-size: 1rem;
+}
+.info h1{
+    margin-right: 15rem;
 }
 .profile-wrapper .container .up .mid .bike-frame{
     position: absolute;
@@ -63,23 +114,41 @@ align-items: center;
     background-position: center;
      animation: animateBike 4s linear infinite;  
 }
+.profile-wrapper .container .up .seperator{
+    height: 100%;
+    width: 0.5%;
+
+}
 .profile-wrapper .container .up .right{
 height: 100%;
 width: 40%;
+box-shadow: 0 0 100px rgba(0,0,0,0.5);
 }
 .profile-wrapper .container .seperator{
   width: 100%;
   height: 0.5%;
-  background-color: rgb(163,0,7);;
-     transform:  uppercase;
-     box-align: center;
-     outline: none;
-     animation: animateLine 5s linear infinite;  
+  background-color: black;;
+     
 }
 .profile-wrapper .container .down{
     width: 100%;
-    height: 24.25%;
-    background-color: brown;
+    min-height: 24.125%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    background-color: white;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px ;
+   
+}
+.profile-wrapper .container .down .data-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0.1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 @keyframes animateBike {
     100%
@@ -105,13 +174,45 @@ width: 40%;
 .profile-wrapper .container .up{
     flex-direction: column;
 }
-.profile-wrapper .container .up .left .image-frame{
-    width: 8rem;
-    height: 8rem;
-    margin-top: 10%;
+.profile-wrapper .container .up .left .bottom .image-frame{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+    margin-right: 1.1rem;
 }
+
 .profile-wrapper .container .up .mid .bike-frame{
     width: 7rem;
     height: 5rem;
+}
+.profile-wrapper .container .up .mid .info{
+    margin-top: 70%;
+}
+.info .inputBox h2{
+    font-size: 1rem;
+}
+.info .inputBox label{
+    font-size: 0.7rem;
+}
+.profile-wrapper .container .up .left .top{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
+    text-overflow: clip;
+    white-space: nowrap;
+
+}
+.profile-wrapper .container .down{
+     font-size: 0.5rem;
+     
+}
+.profile-wrapper .container .down .data-wrapper{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.profile-wrapper .container .up .right{
+min-height: 100%;
+width: 100%;
 }
 }
