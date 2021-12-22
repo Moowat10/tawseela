@@ -14,18 +14,14 @@ export default function Header() {
       <div className="side">
         <h1>Tawseela</h1>
       </div>
-      <div className="side">
-        <h4>Login</h4>
-      </div>
+      <div className="side"></div>
     </div> // For PC Display
   ) : (
     <div className="header-wrapper">
       <div className="side">
         <h1>Tawseela</h1>
       </div>
-      <div className="side">
-        <h4>Login</h4>
-      </div>
+      <div className="side"></div>
     </div>
   );
 }

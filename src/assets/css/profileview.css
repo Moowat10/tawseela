@@ -154,22 +154,6 @@ box-shadow: 0 0 100px rgba(0,0,0,0.5);
     100%
     { margin-left: 100vw;}
 }
-@keyframes animateLine {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
-    {
-        background-color: rgb(163, 0, 8);;
-        box-shadow: none;
-    }
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
-    {
-        background-color: white;
-        box-shadow: 0 0 10px #b82d34,
-        0 0 20px #b82d34,
-        0 0 40px #b82d34,
-        0 0 80px #b82d34,
-        0 0 160px #b82d34;
-    }
-}
 @media screen and (max-width: 1024px) {
 .profile-wrapper .container .up{
     flex-direction: column;

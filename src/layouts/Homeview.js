@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import { StyledFirebaseAuth } from "react-firebaseui";
 import firebase from "../config/Firebase";
 import "../assets/css/homeview.css";
-import SectionOne from "../views/SectionOne.js";
-import SectionTwo from "../views/SectionTwo.js";
-import SectionThree from "../views/SectionThree.js";
-import SectionFour from "../views/SectionFour.js";
 
 export default class Homeview extends Component {
   state = {

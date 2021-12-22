@@ -4,18 +4,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import "./assets/css/App.css";
 import { AuthProvider } from "./contexts/Auth";
-import PublicRoute from "./router/PublicRoute";
-import PrivateRoute from "./router/PrivateRoute";
-import Header from "./components/Header";
-import Signview from "./views/signview";
-import Cartview from "./views/Cartview";
-import HomeView from "./layouts/Homeview";
-import ProfileView from "./layouts/Profileview";
+import App from "./App";
+
 ReactDOM.render(
   <AuthProvider className="app">
     <BrowserRouter>
-      <ProfileView></ProfileView>
-      <Header />
+      <Switch>
+        <App />
+      </Switch>
     </BrowserRouter>
   </AuthProvider>,
   document.getElementById("root")
