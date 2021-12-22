@@ -16,45 +16,78 @@ export default function Sider({ isFolded }) {
     <div className={Folded ? "sider-wrapper-folded" : "sider-wrapper"}>
       <div className="sidebar-header">
         <div
-          onClick={toggleSideBar}
-          className="fold-btn"
           style={
-            Folded
+            !Folded
               ? {
-                  position: "fixed",
-                  right: "0",
-                  top: "0",
-                  borderRight: "solid",
-                  borderRightWidth: "2px",
-                  width: "2.7rem",
-                  height: "3rem",
                   display: "flex",
+                  flexDirection: "row",
                   justifyContent: "center",
                   alignItems: "center",
-                  boxShadow: "0 0 5px black",
                 }
               : {
-                  position: "fixed",
-                  borderRight: "solid",
-                  borderRightWidth: "2px",
-                  width: "2.7rem",
-                  height: "3rem",
                   display: "flex",
+                  flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                  boxShadow: "0 0 5px black",
                 }
           }
         >
-          {!Folded ? (
-            <RiMenuUnfoldLine
+          <div
+            className="fold-btns"
+            onClick={toggleSideBar}
+            style={
+              Folded
+                ? {
+                    position: "fixed",
+                    right: "0",
+                    top: "0",
+                    borderRight: "solid",
+                    borderRightWidth: "2px",
+                    width: "2.7rem",
+                    height: "3rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    boxShadow: "0 0 5px black",
+                  }
+                : {
+                    position: "fixed",
+                    borderRight: "solid",
+                    borderRightWidth: "2px",
+                    width: "2.7rem",
+                    height: "3rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    boxShadow: "0 0 5px black",
+                  }
+            }
+          >
+            {!Folded ? (
+              <RiMenuUnfoldLine
+                style={{ color: "white", width: "100%", height: "50%" }}
+              />
+            ) : (
+              <RiMenuFoldLine
+                style={{ color: "white", width: "100%", height: "50%" }}
+              />
+            )}
+          </div>
+          <div className="fold-btns">
+            <BiHomeCircle
               style={{ color: "white", width: "100%", height: "50%" }}
             />
-          ) : (
-            <RiMenuFoldLine
+          </div>
+          <div className="fold-btns">
+            <ImProfile
               style={{ color: "white", width: "100%", height: "50%" }}
             />
-          )}
+          </div>
+          <div className="fold-btns">
+            <MdDirectionsBike
+              style={{ color: "white", width: "100%", height: "50%" }}
+            />
+          </div>
         </div>
       </div>
       <div

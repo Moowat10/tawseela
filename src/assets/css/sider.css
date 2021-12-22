@@ -44,6 +44,24 @@
     align-items: center;
 
 }
+.fold-btns{
+ position: relative;
+            right: 0;
+            top: 1;;
+            border-right: solid;
+            border-right-width: 2px;
+            width: 2.7rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 5px black;
+        }
+.fold-btns:hover{
+ opacity: 0.5;
+ background-color: var(--clr-neon);
+ cursor: pointer;
+}
 .fold-btn:hover{
  opacity: 0.5;
  background-color: var(--clr-neon);
